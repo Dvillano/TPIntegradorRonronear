@@ -10,7 +10,7 @@ class Usuario:
         mensaje = input("¿Qué estás pensando? (Max: 15 palabras)\n")
         self.mensajes.append(mensaje)
         
-        if len(mensaje.split(" ")) > 15:
+        if len(mensaje.split()) > 15:
             return "Tweet demasiado largo"
         else:
             return "Tweet enviado"
