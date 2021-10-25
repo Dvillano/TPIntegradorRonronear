@@ -9,6 +9,6 @@ class Terminator:
         for mensaje in mensajes:
             archivo.write(mensaje + "\n")
         archivo.close()
-        
-        
-#Englobar bots en una clase padre 
+
+
+#Englobar bots en una clase padre
