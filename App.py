@@ -1,7 +1,30 @@
 from Usuario import Usuario
 from Bots import Terminator
 
+print("")
+print("    ###################################")
+print("    #                                 #")
+print("    #   Hola!! Bienvenidos a          #")
+print("    #        PdpTwitter!!             #")
+print("    #                                 #")
+print("    ###################################")
+
+
+def start_tuitear():
+    start = None
+    while start != "S":
+        start = input("¿Queres ingresar tu usuario y contrasenia?: [S/N] ")
+        start = start.upper()
+        if start == "N":
+            print("En serio?? Somos mejores que facebook!!!")
+            exit()
+        if start == "S":
+            print("Bien!! Vamos a tuiear!!!")
+start_tuitear()
+
 usuario = Usuario(input("Bienvenido a Pdptwitter, por favor ingrese su nombre de usuario: "))
+
+
 
 # Mejorar este codigo
 while (True):
