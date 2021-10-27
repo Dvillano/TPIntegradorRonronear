@@ -1,5 +1,6 @@
 from Usuario import Usuario
 from Bots import Terminator
+from CasosPrueba import usuarioMaria, usuarioPedro, usuarioJuan
 
 print("")
 print("    ###################################")
@@ -26,7 +27,6 @@ usuario = Usuario(input("Bienvenido a Pdptwitter, por favor ingrese su nombre de
 
 
 
-# Mejorar este codigo
 while (True):
 
     print("Bienvenido " + usuario.nombre + " a Pdptwitter, ¿que desea hacer?")
@@ -52,5 +52,14 @@ while (True):
     else:
         print("Ingrese una opcion valida")
 
+Terminator.guardarTweets(usuario.nombre, usuario.mensajes)
+Terminator.guardarTweets(usuarioPedro.nombre, usuarioPedro.mensajes)
+Terminator.guardarTweets(usuarioJuan.nombre, usuarioJuan.mensajes)
+Terminator.guardarTweets(usuarioMaria.nombre, usuarioMaria.mensajes)
 
-Terminator.guardarTweets(usuario.nombre, usuario.verMensajes())
+#Por hacer:
+# 1. Crear clase Aplicacion
+# 	- Metodo para envio de mensaje
+# 2. Crear casos prueba (3 ususarios, 3 tweet arroba y 3 arroba) 
+# 3. Obtener listado de tweets que arroban al usuario 
+# 4. Obtener listado de tweets que no arroban a nadie

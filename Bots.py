@@ -11,4 +11,5 @@ class Terminator:
         archivo.close()
 
 
+#Por hacer: 
 #Englobar bots en una clase padre
