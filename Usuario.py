@@ -10,6 +10,14 @@ class Usuario:
             self.mensajes.append(mensaje)
             return "Tweet enviado"
         
-    def verMensajes(self):
+    def verTodosLosMensajes(self):
         return self.mensajes
+
+    def verMensajesAlVacio(self):
+        listaMensajesAlVacio = [s for s in self.mensajes if not s.__contains__("@")]
+        return listaMensajesAlVacio
+
+    def verMensajesAUsuarios(self):
+        listaMensajesAUsuarios = [s for s in self.mensajes if s.__contains__("@")]
+        return listaMensajesAUsuarios
 

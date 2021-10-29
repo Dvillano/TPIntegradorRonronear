@@ -52,7 +52,7 @@ while (True):
     else:
         print("Ingrese una opcion valida")
 
-Terminator.guardarTweets(usuario.nombre, usuario.mensajes)
+# Terminator.guardarTweets(usuario.nombre, usuario.mensajes)
 Terminator.guardarTweets(usuarioPedro.nombre, usuarioPedro.mensajes)
 Terminator.guardarTweets(usuarioJuan.nombre, usuarioJuan.mensajes)
 Terminator.guardarTweets(usuarioMaria.nombre, usuarioMaria.mensajes)
@@ -60,6 +60,6 @@ Terminator.guardarTweets(usuarioMaria.nombre, usuarioMaria.mensajes)
 #Por hacer:
 # 1. Crear clase Aplicacion
 # 	- Metodo para envio de mensaje
-# 2. Crear casos prueba (3 ususarios, 3 tweet arroba y 3 arroba) 
-# 3. Obtener listado de tweets que arroban al usuario 
-# 4. Obtener listado de tweets que no arroban a nadie
+# 2. Crear casos prueba (3 ususarios, 3 tweet arroba y 3 arroba) ✓
+# 3. Obtener listado de tweets que arroban al usuario ✓
+# 4. Obtener listado de tweets que no arroban a nadie ✓
