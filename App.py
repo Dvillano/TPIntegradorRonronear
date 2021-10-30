@@ -46,18 +46,15 @@ while (True):
 
         respuesta = usuario.twittear()
         print(respuesta)
-
-    
-
+        
     elif opcion == 3:
-        
-        for user in [usuarioJuan, usuarioPedro, usuarioMaria]:
-            if usuario == user:
-                continue
-            for msg in user.mensajes:
-                if usuario.nombre in msg:
-                    print(msg)
-        
+
+        for tweet in usuarioPedro.verMensajesAUsuarioEspecifico(usuario.nombre):
+            print(tweet)
+        for tweet in usuarioJuan.verMensajesAUsuarioEspecifico(usuario.nombre):
+            print(tweet)
+        for tweet in usuarioMaria.verMensajesAUsuarioEspecifico(usuario.nombre):
+            print(tweet)
         
         break
 
