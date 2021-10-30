@@ -20,4 +20,12 @@ class Usuario:
     def verMensajesAUsuarios(self):
         listaMensajesAUsuarios = [s for s in self.mensajes if s.__contains__("@")]
         return listaMensajesAUsuarios
+    
+    def verMensajesAUsuarioEspecifico(self, usuario):
+        # usuario pasado como parametro debe incluir el "@"
+        if not usuario.startswith("@"):
+            return []
+        listaMensajesAUsuarioEspecifico = [s for s in self.mensajes if s.__contains__(usuario)]
+        return listaMensajesAUsuarioEspecifico
+
 
