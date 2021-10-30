@@ -4,11 +4,14 @@ class Terminator:
         self = self
 
     def guardarTweets(nombreUsuario, mensajes):
-        archivo = open("tweetsGuardados/" + nombreUsuario + ".txt", "a")
+        try:
+            archivo = open("tweetsGuardados/" + nombreUsuario + ".txt", "a")
 
-        for mensaje in mensajes:
-            archivo.write(mensaje + "\n")
-        archivo.close()
+            for mensaje in mensajes:
+                archivo.write(mensaje + "\n")
+            archivo.close()
+        except IOError:
+            input("Error al guardar los archivos de mensajes")
 
 
 #Por hacer: 
