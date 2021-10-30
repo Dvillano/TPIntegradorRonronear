@@ -51,13 +51,13 @@ while (True):
 
     elif opcion == 3:
         
-        print("De cual usuario arrobado queres ver las menciones?")
-        if tweet in usuarioMaria.twittear:
-            print(tweet)
-        elif tweet in usuarioJuan.twittear:
-            print(tweet)
-        elif tweet in usuarioPedro.twittear:
-            print(tweet)
+        for user in [usuarioJuan, usuarioPedro, usuarioMaria]:
+            if usuario == user:
+                continue
+            for msg in user.mensajes:
+                if usuario.nombre in msg:
+                    print(msg)
+        
         
         break
 
