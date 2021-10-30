@@ -43,8 +43,8 @@ while (True):
             print(tweet)
 
     elif opcion == 2:
-
-        respuesta = usuario.twittear()
+        tweet = input("Que estas pensando?: \n")
+        respuesta = usuario.twittear(tweet)
         print(respuesta)
         
     elif opcion == 3:
