@@ -28,3 +28,5 @@ usuarioJuan.twittear("3-0!!!!!!!!")
 usuarioJuan.twittear("@Pedro obvio amigo siempre listo para unas birras")
 usuarioJuan.twittear("@Maria claaaroo sabes que no me pierdo ninguna fiesta")
 usuarioJuan.twittear("@Maria recordame que llevo para el asado? ")
+
+listaUsuariosPrueba = [usuarioPedro, usuarioMaria, usuarioJuan]

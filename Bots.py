@@ -13,6 +13,3 @@ class Terminator:
         except IOError:
             input("Error al guardar los archivos de mensajes")
 
-
-#Por hacer: 
-#Englobar bots en una clase padre
