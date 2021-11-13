@@ -3,7 +3,7 @@ class Bot:
     def __init__(self):
         pass
     
-    def enviarMensaje(mensaje):
+    def enviarRespuesta(mensaje):
         print(mensaje)
  
 
