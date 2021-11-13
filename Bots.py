@@ -1,5 +1,14 @@
+#Clase padre Bot
+class Bot:
+    def __init__(self):
+        pass
+    
+    def enviarMensaje(mensaje):
+        print(mensaje)
+ 
+
 #Bot Terminator: No responden, pero se guardan información de todos los que twittean
-class Terminator:
+class Terminator():
     def __init__(self):
         self = self
 
@@ -12,4 +21,5 @@ class Terminator:
             archivo.close()
         except IOError:
             input("Error al guardar los archivos de mensajes")
+
 

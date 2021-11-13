@@ -1,3 +1,4 @@
+from Bots import Terminator
 from Usuario import Usuario
 
 class App:
@@ -27,3 +28,6 @@ class App:
         usuario = Usuario(nombre)
         self.guardarUsuario(usuario)
         return usuario
+    
+    
+    
