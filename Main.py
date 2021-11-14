@@ -78,8 +78,6 @@ while (True):
         nombreUsuario = input("Por favor ingrese su nombre de usuario: ")
         usuario = Pdptwitter.crearUsuario(nombreUsuario)
         
-        print(Pdptwitter.mostrarUsuarios())
-
     elif opcion == 5:
         print(usuario.verMensajesAlVacio())
 
