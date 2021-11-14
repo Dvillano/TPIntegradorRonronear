@@ -64,11 +64,12 @@ while (True):
         Pdptwitter.guardarMensaje(tweet)
         
         # Wally envia su respuesta y se guarda en las menciones al usuario
-        respuestaBot = Wally.publicidad(tweet, usuario.nombre)
-        Pdptwitter.guardarMensaje(respuestaBot)
+        respuestaWally = Wally.publicidad(tweet, usuario.nombre)
+        Pdptwitter.guardarMensaje(respuestaWally)
 
         # Benito revisa el mensaje del usuario
         Benito.revisarMensaje(usuario.nombre,tweet)
+
 
     elif opcion == 3:
         
