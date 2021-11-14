@@ -1,4 +1,3 @@
-from Bots import Terminator
 from Usuario import Usuario
 
 class App:
