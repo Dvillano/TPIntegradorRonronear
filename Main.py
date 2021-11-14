@@ -75,7 +75,7 @@ while (True):
         for mensaje in Pdptwitter.mostrarMensajes():
             if mensaje.__contains__(usuario.nombre):
                 print(mensaje)
-
+            
     elif opcion == 4:
 
         nombreUsuario = input("Por favor ingrese su nombre de usuario: ")
