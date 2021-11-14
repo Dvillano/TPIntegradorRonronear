@@ -1,4 +1,7 @@
 #Clase padre Bot
+from Usuario import Usuario
+
+
 class Bot:
     def __init__(self):
         pass
@@ -8,9 +11,13 @@ class Bot:
  
 
 #Bot Terminator: No responden, pero se guardan información de todos los que twittean
-class Terminator():
+#Y hereda los atributos de la clase padre Bot.
+class Terminator(Bot):
     def __init__(self):
+        Bot().__init__()
         self = self
+
+    
 
     def guardarTweets(nombreUsuario, mensajes):
         try:
@@ -22,4 +29,7 @@ class Terminator():
         except IOError:
             input("Error al guardar los archivos de mensajes")
 
+
+respuesta = Terminator()
+respuesta.enviarRespuesta()
 
