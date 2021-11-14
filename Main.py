@@ -1,5 +1,5 @@
 from App import App
-from Bots import Terminator, Wally
+from Bots import Terminator, Wally, Benito
 from CasosPrueba import listaUsuariosPrueba
 
 print("")
@@ -57,15 +57,18 @@ while (True):
 
     elif opcion == 2:
         
-        #Usuario envia su mensaje, se guarda en la lista de mensajes del usuario
+        # Usuario envia su mensaje, se guarda en la lista de mensajes del usuario
         tweet = input("Que estas pensando? (Max: 15 palabras): \n")
         respuesta = usuario.twittear(tweet)
         print(respuesta)
         Pdptwitter.guardarMensaje(tweet)
         
-        #Wally envia su respuesta y se guarda en las menciones al usuario
+        # Wally envia su respuesta y se guarda en las menciones al usuario
         respuestaBot = Wally.publicidad(tweet, usuario.nombre)
         Pdptwitter.guardarMensaje(respuestaBot)
+
+        # Benito revisa el mensaje del usuario
+        Benito.revisarMensaje(usuario.nombre,tweet)
 
     elif opcion == 3:
         
