@@ -57,8 +57,6 @@ class Benito(Bot):
             for j in respuestaEnLista:
                 if i == j:
                     archivo = open("tweetsReportados/" + usuario + ".txt", "a")
-                    print("Mensaje Guardado y reportado a la Policia")
                     archivo.write(respuesta +"\n")
                     archivo.close 
-                    
-    
+                    return Benito.enviarRespuesta(usuario, "Mensaje Guardado y reportado a la Policia")

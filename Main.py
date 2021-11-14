@@ -65,16 +65,19 @@ while (True):
         
         # Wally envia su respuesta y se guarda en las menciones al usuario
         respuestaWally = Wally.publicidad(tweet, usuario.nombre)
-        Pdptwitter.guardarMensaje(respuestaWally)
+        if respuestaWally != None:
+            Pdptwitter.guardarMensaje(respuestaWally)
+        
 
         # Benito revisa el mensaje del usuario
-        Benito.revisarMensaje(usuario.nombre,tweet)
-
-
+        respuestaBenito = Benito.revisarMensaje(usuario.nombre,tweet)
+        if respuestaBenito != None:
+            Pdptwitter.guardarMensaje(respuestaBenito)
+        
     elif opcion == 3:
         
         for mensaje in Pdptwitter.mostrarMensajes():
-            if mensaje.__contains__(usuario.nombre):
+            if usuario.nombre in mensaje:
                 print(mensaje)
             
     elif opcion == 4:
