@@ -30,9 +30,7 @@ class Terminator(Bot):
     def __init__(self):
         Bot().__init__()
         self = self
-
-    
-
+        
     def guardarTweets(nombreUsuario, mensajes):
         try:
             archivo = open("tweetsGuardados/" + nombreUsuario + ".txt", "a")
@@ -42,8 +40,4 @@ class Terminator(Bot):
             archivo.close()
         except IOError:
             input("Error al guardar los archivos de mensajes")
-
-
-respuesta = Terminator()
-respuesta.enviarRespuesta()
 
